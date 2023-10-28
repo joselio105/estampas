@@ -6,12 +6,8 @@
     }
 
     #container > header > .ident > a{
-    height: 96px;
-    width: 96px;
-    }
-
-    #container > header > .ident > a > img{
-        height: 72px;
+        height: 96px;
+        width: 96px;
     }
 
     #container > header > .social-media {
