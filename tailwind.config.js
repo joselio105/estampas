@@ -1,15 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./src/**/*.tsx"
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily: {
-      'sans': ["Poppins", "sans-serif"],
-      'title': ["Cutive Mono", "sans-serif"]
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-poppins)"],
+        title: ["var(--font-cutive-mono)"],
+      },
     },
-    extend: {},
   },
   plugins: [],
-}
-
+};
